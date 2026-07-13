@@ -1,0 +1,8 @@
+{
+  "id": "invert_filter",
+  "name": "Invert Colors Filter",
+  "version": "1.0",
+  "author": "Pixellent (bundled example)",
+  "description": "Inverts the RGB colors of the current layer.",
+  "enabled": true
+}

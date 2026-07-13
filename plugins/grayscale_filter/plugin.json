@@ -1,0 +1,8 @@
+{
+  "id": "grayscale_filter",
+  "name": "Grayscale Filter",
+  "version": "1.0",
+  "author": "Pixellent (bundled example)",
+  "description": "Converts the current layer to grayscale.",
+  "enabled": true
+}

@@ -1,0 +1,8 @@
+{
+  "id": "template",
+  "name": "My Plugin Name",
+  "version": "1.0",
+  "author": "Your Name",
+  "description": "What this plugin does.",
+  "enabled": true
+}

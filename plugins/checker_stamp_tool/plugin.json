@@ -1,0 +1,8 @@
+{
+  "id": "checker_stamp_tool",
+  "name": "Checker Stamp Tool",
+  "version": "1.0",
+  "author": "Pixellent (bundled example)",
+  "description": "Adds a Checker Stamp drawing tool — demonstrates that plugins can register whole new tools, not just filters.",
+  "enabled": true
+}
