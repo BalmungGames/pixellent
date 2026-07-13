@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/layers/LayerRow.gd" id="1"]
+
+[node name="LayerRow" type="PanelContainer"]
+script = ExtResource("1")
+
+[node name="HBox" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="VisibleCheck" type="CheckBox" parent="HBox"]
+layout_mode = 2
+button_pressed = true
+
+[node name="SelectArea" type="Button" parent="HBox"]
+layout_mode = 2
+text = "•"
+flat = true
+custom_minimum_size = Vector2(20, 0)
+
+[node name="NameLabel" type="Label" parent="HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Layer"
+clip_text = true
+
+[node name="OpacitySlider" type="HSlider" parent="HBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(70, 0)
+min_value = 0
+max_value = 100
+value = 100

@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/palette/PalettePanel.gd" id="1"]
+
+[node name="PalettePanel" type="VBoxContainer"]
+script = ExtResource("1")
+
+[node name="Header" type="Label" parent="."]
+layout_mode = 2
+text = "Palette"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="."]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 32)
+color = Color(0, 0, 0, 1)
+
+[node name="Toolbar" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="AddButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "+"
+tooltip_text = "Add current color"
+
+[node name="RemoveButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "-"
+tooltip_text = "Remove selected swatch"
+
+[node name="SaveButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "Save"
+
+[node name="LoadButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "Load"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Grid" type="GridContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 6

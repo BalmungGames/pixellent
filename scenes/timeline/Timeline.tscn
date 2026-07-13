@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/timeline/Timeline.gd" id="1"]
+
+[node name="Timeline" type="VBoxContainer"]
+script = ExtResource("1")
+
+[node name="Toolbar" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="AddFrame" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "+ Frame"
+
+[node name="RemoveFrame" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "- Frame"
+
+[node name="DupFrame" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "⧉ Frame"
+
+[node name="PlayButton" type="Button" parent="Toolbar"]
+layout_mode = 2
+text = "▶"
+
+[node name="FpsLabel" type="Label" parent="Toolbar"]
+layout_mode = 2
+text = "FPS"
+
+[node name="FpsSpin" type="SpinBox" parent="Toolbar"]
+layout_mode = 2
+min_value = 1
+max_value = 60
+value = 6
+
+[node name="OnionCheck" type="CheckBox" parent="Toolbar"]
+layout_mode = 2
+text = "Onion Skin"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 96)
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 0
+
+[node name="FrameList" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
